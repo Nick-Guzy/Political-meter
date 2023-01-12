@@ -1,0 +1,72 @@
+html {
+  --meter-knob-offset: 0;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+header {
+  height: 5rem;
+  font-size: 3rem;
+  background-color: #222;
+  color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  font-size: 2.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+#start-button {
+  margin-top: 3rem;
+}
+
+#poll-area {
+  display: flex;
+  flex-direction: column;
+}
+
+#poll-area.hidden, button.hidden, #meter-area.hidden {
+  display: none;
+}
+
+#question {
+  font-size: 3rem;
+  min-height: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#meter-area {
+  background-color: salmon;
+  height: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#meter-groove {
+  width: 75%;
+  height: 3rem;
+  background-color: rgb(77, 57, 50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#meter-knob {
+  width: 2rem;
+  height: 5rem;
+  background-color: rgb(34, 91, 54);
+  transform: translateX(var(--meter-knob-offset));
+}
+
